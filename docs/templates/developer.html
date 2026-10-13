@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>程序员简历模板 · Developer Resume</title>
+<!--
+  使用方法：
+  1. 直接把本文件中的示例内容替换成你的信息
+  2. 浏览器打开后按 Ctrl+P（Mac: Cmd+P），目标选「另存为 PDF」，边距选「无」
+-->
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #e8e8e8; color: #2d3748; line-height: 1.7;
+    display: flex; justify-content: center; padding: 32px 16px;
+  }
+  .page {
+    background: #fff; width: 794px; max-width: 100%;
+    display: grid; grid-template-columns: 250px 1fr;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  }
+  .side { background: #1a202c; color: #e2e8f0; padding: 44px 28px; }
+  .side .avatar {
+    width: 96px; height: 96px; border-radius: 50%; background: #4a5568;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2.2rem; margin: 0 auto 16px;
+  }
+  .side h1 { text-align: center; font-size: 1.5rem; }
+  .side .role { text-align: center; color: #90cdf4; font-size: 0.88rem; margin-top: 4px; }
+  .side h2 {
+    font-size: 0.8rem; color: #90cdf4; letter-spacing: 2px;
+    margin: 28px 0 10px; text-transform: uppercase;
+    border-bottom: 1px solid #4a5568; padding-bottom: 5px;
+  }
+  .side p, .side li { font-size: 0.83rem; color: #cbd5e0; }
+  .side ul { list-style: none; }
+  .side li { margin-bottom: 7px; }
+  .tag {
+    display: inline-block; background: #2d3748; border-radius: 6px;
+    padding: 2px 9px; margin: 0 5px 6px 0; font-size: 0.76rem; color: #e2e8f0;
+  }
+  .bar { background: #2d3748; border-radius: 99px; height: 6px; margin: 4px 0 10px; }
+  .bar i { display: block; background: #63b3ed; height: 100%; border-radius: 99px; }
+  main { padding: 44px 36px; }
+  main h2 {
+    font-size: 1.05rem; color: #1a202c; margin: 26px 0 12px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  main h2:first-child { margin-top: 0; }
+  main h2::before { content: ""; width: 4px; height: 18px; background: #3182ce; border-radius: 2px; }
+  .item { margin-bottom: 16px; }
+  .item .row { display: flex; justify-content: space-between; align-items: baseline; }
+  .item .row b { font-size: 0.95rem; }
+  .item .row .time { color: #718096; font-size: 0.82rem; }
+  .item .stack { color: #3182ce; font-size: 0.8rem; margin: 2px 0; }
+  .item ul { margin: 6px 0 0 18px; font-size: 0.87rem; color: #4a5568; }
+  .item li { margin-bottom: 3px; }
+  .gh { font-size: 0.83rem; color: #4a5568; }
+  .gh a { color: #3182ce; text-decoration: none; }
+  @media print {
+    body { background: #fff; padding: 0; }
+    .page { box-shadow: none; width: auto; }
+    @page { margin: 10mm; }
+    .side { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <aside class="side">
+    <div class="avatar">李</div>
+    <h1>李四</h1>
+    <div class="role">后端开发工程师 · 4 年</div>
+
+    <h2>联系方式</h2>
+    <ul>
+      <li>📱 139-0000-0000</li>
+      <li>✉️ lisi@example.com</li>
+      <li>📍 杭州</li>
+    </ul>
+
+    <h2>技术栈</h2>
+    <div>
+      <span class="tag">Go</span><span class="tag">Python</span><span class="tag">MySQL</span>
+      <span class="tag">Redis</span><span class="tag">Kafka</span><span class="tag">Docker</span>
+      <span class="tag">K8s</span><span class="tag">gRPC</span>
+    </div>
+
+    <h2>语言</h2>
+    <p>Go / Python</p>
+    <div class="bar"><i style="width:90%"></i></div>
+    <p>Java / SQL</p>
+    <div class="bar"><i style="width:70%"></i></div>
+    <p>JavaScript</p>
+    <div class="bar"><i style="width:45%"></i></div>
+
+    <h2>开源</h2>
+    <p class="gh">GitHub: <a href="#">github.com/lisi</a><br>⭐ 个人项目 800+ stars</p>
+  </aside>
+
+  <main>
+    <h2>个人优势</h2>
+    <p style="font-size:0.88rem;color:#4a5568">专注高并发后端架构，主导过日 PV 5 亿的系统重构。习惯用数据说话，热衷技术分享，团队 Code Review 文化推动者。</p>
+
+    <h2>工作经历</h2>
+    <div class="item">
+      <div class="row"><b>某大厂 · 高级后端工程师</b><span class="time">2023.04 - 至今</span></div>
+      <div class="stack">Go · K8s · Kafka · ClickHouse</div>
+      <ul>
+        <li>主导订单系统重构，QPS 承载能力从 3k 提升至 3w，P99 延迟降低 70%</li>
+        <li>设计并实现分布式任务调度平台，支撑日均 2000 万次任务执行</li>
+        <li>推动落地链路追踪体系，线上问题平均定位时间从 2h 缩短至 10min</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="row"><b>某创业公司 · 后端工程师</b><span class="time">2021.07 - 2023.03</span></div>
+      <div class="stack">Python · Django · MySQL · Redis</div>
+      <ul>
+        <li>从 0 搭建电商中台，支撑业务从 0 到月 GMV 3000 万</li>
+        <li>设计秒杀方案：库存预热 + 消息队列削峰，扛住 10 倍日常流量</li>
+      </ul>
+    </div>
+
+    <h2>项目经历</h2>
+    <div class="item">
+      <div class="row"><b>分布式 ID 生成器（开源）</b><span class="time">2024</span></div>
+      <ul>
+        <li>基于雪花算法改进，解决时钟回拨问题，GitHub 获 500+ star</li>
+      </ul>
+    </div>
+
+    <h2>教育背景</h2>
+    <div class="item">
+      <div class="row"><b>某大学 · 软件工程（本科）</b><span class="time">2017.09 - 2021.06</span></div>
+    </div>
+  </main>
+</div>
+</body>
+</html>

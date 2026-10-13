@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>设计师简历模板 · Designer Resume</title>
+<!--
+  使用方法：
+  1. 直接把本文件中的示例内容替换成你的信息
+  2. 浏览器打开后按 Ctrl+P（Mac: Cmd+P），目标选「另存为 PDF」，边距选「无」
+-->
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --accent: #e53e3e; --ink: #1a202c; --gray: #718096; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #e8e8e8; color: var(--ink); line-height: 1.7;
+    display: flex; justify-content: center; padding: 32px 16px;
+  }
+  .page {
+    background: #fff; width: 794px; max-width: 100%;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  }
+  .banner {
+    background: linear-gradient(135deg, #1a202c 60%, #2d3748 60%);
+    color: #fff; padding: 44px 48px; display: flex; align-items: center; gap: 28px;
+  }
+  .avatar {
+    width: 92px; height: 92px; border-radius: 20px; background: var(--accent);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2.4rem; flex-shrink: 0;
+  }
+  .banner h1 { font-size: 2rem; }
+  .banner .role { color: #feb2b2; margin-top: 4px; font-size: 0.95rem; }
+  .banner .contact { margin-top: 8px; font-size: 0.82rem; color: #cbd5e0; }
+  .banner .contact span { margin-right: 16px; }
+  .body { display: grid; grid-template-columns: 1fr 230px; }
+  .left { padding: 36px 40px; }
+  .right { padding: 36px 28px; background: #fff5f5; }
+  h2 {
+    font-size: 0.95rem; letter-spacing: 3px; margin-bottom: 14px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  h2::after { content: ""; flex: 1; height: 1px; background: #fed7d7; }
+  h2::before { content: ""; width: 10px; height: 10px; background: var(--accent); border-radius: 3px; }
+  section { margin-bottom: 26px; }
+  .item { margin-bottom: 16px; position: relative; padding-left: 18px; }
+  .item::before {
+    content: ""; position: absolute; left: 0; top: 9px;
+    width: 7px; height: 7px; border-radius: 50%; background: var(--accent);
+  }
+  .item .row { display: flex; justify-content: space-between; align-items: baseline; }
+  .item .row b { font-size: 0.95rem; }
+  .item .time { color: var(--gray); font-size: 0.8rem; }
+  .item ul { margin: 5px 0 0 16px; font-size: 0.86rem; color: #4a5568; }
+  .pf { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .pf div {
+    border-radius: 10px; padding: 14px; font-size: 0.8rem; color: #fff;
+    min-height: 74px; display: flex; flex-direction: column; justify-content: flex-end;
+  }
+  .pf b { font-size: 0.88rem; }
+  .c1 { background: linear-gradient(135deg,#f56565,#ed8936); }
+  .c2 { background: linear-gradient(135deg,#4299e1,#667eea); }
+  .c3 { background: linear-gradient(135deg,#48bb78,#38b2ac); }
+  .c4 { background: linear-gradient(135deg,#9f7aea,#ed64a6); }
+  .right h2 { margin-bottom: 10px; }
+  .skill { margin-bottom: 12px; font-size: 0.85rem; }
+  .dots { letter-spacing: 4px; color: #feb2b2; font-size: 0.9rem; }
+  .dots i { font-style: normal; color: var(--accent); }
+  .right p { font-size: 0.82rem; color: #4a5568; }
+  @media print {
+    body { background: #fff; padding: 0; }
+    .page { box-shadow: none; width: auto; }
+    @page { margin: 8mm; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="banner">
+    <div class="avatar">王</div>
+    <div>
+      <h1>王五</h1>
+      <div class="role">UI/UX 设计师 · 6 年经验</div>
+      <div class="contact">
+        <span>📱 137-0000-0000</span><span>✉️ wangwu@example.com</span><span>🎨 behance.net/wangwu</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="left">
+      <section>
+        <h2>工作经历</h2>
+        <div class="item">
+          <div class="row"><b>某互联网公司 · 资深 UI 设计师</b><span class="time">2022.05 - 至今</span></div>
+          <ul>
+            <li>负责 App 全端视觉改版，改版后次日留存提升 8%，应用商店评分 4.2 → 4.8</li>
+            <li>从零搭建设计系统（200+ 组件），设计交付效率提升 50%</li>
+            <li>主导品牌升级项目，输出 VI 规范并落地到全线产品</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="row"><b>某设计公司 · UI 设计师</b><span class="time">2019.07 - 2022.04</span></div>
+          <ul>
+            <li>服务 10+ 客户，涵盖金融、教育、电商行业，3 个项目获站酷首页推荐</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>精选作品</h2>
+        <div class="pf">
+          <div class="c1"><b>金融 App 改版</b><span>留存 +8% · 评分 4.8</span></div>
+          <div class="c2"><b>企业级设计系统</b><span>200+ 组件</span></div>
+          <div class="c3"><b>电商大促视觉</b><span>GMV 破亿项目</span></div>
+          <div class="c4"><b>品牌 VI 升级</b><span>全线产品落地</span></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>教育背景</h2>
+        <div class="item">
+          <div class="row"><b>某美术学院 · 视觉传达设计（本科）</b><span class="time">2015.09 - 2019.06</span></div>
+        </div>
+      </section>
+    </div>
+
+    <div class="right">
+      <section>
+        <h2>设计工具</h2>
+        <div class="skill">Figma <div class="dots"><i>●●●●●</i>●●●●</div></div>
+        <div class="skill">Sketch <div class="dots"><i>●●●●</i>●●●●●</div></div>
+        <div class="skill">Photoshop <div class="dots"><i>●●●●●</i>●●●●</div></div>
+        <div class="skill">Blender <div class="dots"><i>●●●</i>●●●●●●</div></div>
+      </section>
+
+      <section>
+        <h2>设计能力</h2>
+        <p>视觉设计 / 交互设计<br>设计系统 / 品牌设计<br>动效设计 / 用户研究</p>
+      </section>
+
+      <section>
+        <h2>获奖</h2>
+        <p>🏆 站酷设计奖 铜奖（2023）<br>🏆 UI 中国 优秀作品（2022）</p>
+      </section>
+
+      <section>
+        <h2>自我评价</h2>
+        <p>相信好设计是「克制」的艺术。既能仰望星空做概念，也能脚踏实地跟开发抠像素。</p>
+      </section>
+    </div>
+  </div>
+</div>
+</body>
+</html>

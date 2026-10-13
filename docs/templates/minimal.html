@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>极简简历模板 · Minimal Resume</title>
+<!--
+  使用方法：
+  1. 直接把本文件中的示例内容替换成你的信息
+  2. 浏览器打开后按 Ctrl+P（Mac: Cmd+P），目标选「另存为 PDF」，边距选「无」
+-->
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Source Han Serif SC", "Noto Serif SC", "SimSun", serif;
+    background: #e8e8e8; color: #222; line-height: 1.75;
+    display: flex; justify-content: center; padding: 32px 16px;
+  }
+  .page {
+    background: #fff; width: 794px; max-width: 100%; padding: 56px 64px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  }
+  header { text-align: center; border-bottom: 2px solid #222; padding-bottom: 20px; }
+  header h1 { font-size: 2rem; letter-spacing: 8px; }
+  header .title { margin-top: 6px; color: #666; font-size: 0.95rem; letter-spacing: 2px; }
+  header .contact { margin-top: 10px; font-size: 0.85rem; color: #555; }
+  header .contact span { margin: 0 10px; }
+  section { margin-top: 28px; }
+  h2 {
+    font-size: 1.05rem; letter-spacing: 4px; margin-bottom: 12px;
+    border-bottom: 1px solid #ccc; padding-bottom: 6px;
+  }
+  h2::before { content: "◆"; font-size: 0.7rem; margin-right: 8px; vertical-align: 2px; }
+  .item { margin-bottom: 14px; }
+  .item .row { display: flex; justify-content: space-between; align-items: baseline; }
+  .item .row b { font-size: 0.98rem; }
+  .item .row .time { color: #777; font-size: 0.85rem; }
+  .item .sub { color: #666; font-size: 0.88rem; }
+  .item ul { margin: 6px 0 0 20px; font-size: 0.9rem; color: #333; }
+  .skills { display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 0.9rem; }
+  @media print {
+    body { background: #fff; padding: 0; }
+    .page { box-shadow: none; width: auto; padding: 0; }
+    @page { margin: 15mm; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>张三</h1>
+    <div class="title">产品经理 · 5 年经验</div>
+    <div class="contact">
+      <span>📱 138-0000-0000</span>
+      <span>✉️ zhangsan@example.com</span>
+      <span>📍 北京</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>个人简介</h2>
+    <p>5 年互联网产品经验，主导过 3 款 DAU 百万级产品的从 0 到 1。擅长用户增长与数据驱动决策，跨团队协调能力强。</p>
+  </section>
+
+  <section>
+    <h2>工作经历</h2>
+    <div class="item">
+      <div class="row"><b>某科技有限公司 · 高级产品经理</b><span class="time">2022.03 - 至今</span></div>
+      <ul>
+        <li>负责核心产品线，年营收从 2000 万增长至 8000 万，主导 12 次版本迭代</li>
+        <li>搭建数据看板体系，需求评审通过率提升 40%，返工率下降 25%</li>
+        <li>带领 5 人产品团队，建立标准化 PRD 流程与需求管理规范</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="row"><b>某互联网公司 · 产品经理</b><span class="time">2020.07 - 2022.02</span></div>
+      <ul>
+        <li>从 0 到 1 搭建社区产品，上线 6 个月 DAU 突破 50 万</li>
+        <li>设计邀请裂变机制，获客成本降低 60%</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>教育背景</h2>
+    <div class="item">
+      <div class="row"><b>某大学 · 计算机科学与技术（本科）</b><span class="time">2016.09 - 2020.06</span></div>
+      <div class="sub">GPA 3.6/4.0 · 校级优秀毕业生</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>技能证书</h2>
+    <div class="skills">
+      <span>数据分析（SQL / Excel）</span>
+      <span>原型设计（Figma / Axure）</span>
+      <span>英语 CET-6</span>
+      <span>PMP 认证</span>
+    </div>
+  </section>
+</div>
+</body>
+</html>

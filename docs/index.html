@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awesome Resume 简历模板 - 免费精美的中文简历模板</title>
+<meta name="description" content="免费精美的中文简历模板，浏览器直接编辑，Ctrl+P 即可导出 PDF">
+<style>
+  :root {
+    --bg: #f8f7f4; --card: #ffffff; --text: #1f2328; --muted: #656d76;
+    --accent: #c05621; --accent-soft: #fdf0e6; --border: #e8e4dc; --radius: 16px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+         background: var(--bg); color: var(--text); line-height: 1.6; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+  header.hero { text-align: center; padding: 64px 20px 40px; }
+  header.hero h1 { font-size: 2.4rem; letter-spacing: -0.5px; }
+  header.hero p.sub { color: var(--muted); margin-top: 12px; font-size: 1.05rem; }
+  .steps { display: flex; gap: 14px; justify-content: center; margin-top: 26px; flex-wrap: wrap; }
+  .step { background: var(--card); border: 1px solid var(--border); border-radius: 999px;
+          padding: 8px 20px; font-size: 0.88rem; color: var(--muted); }
+  .step b { color: var(--accent); margin-right: 6px; }
+  main { padding: 20px 0 60px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+          overflow: hidden; transition: transform .15s, box-shadow .15s; }
+  .card:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(31,35,40,0.10); }
+  .preview { height: 260px; border: none; width: 100%; pointer-events: none;
+             transform: scale(1); background: #fff; }
+  .preview-wrap { height: 260px; overflow: hidden; position: relative; border-bottom: 1px solid var(--border); }
+  .preview-wrap iframe { width: 1280px; height: 1800px; border: none; pointer-events: none;
+             transform: scale(0.62); transform-origin: top left; }
+  .info { padding: 20px 22px; }
+  .info h3 { font-size: 1.1rem; }
+  .info p { color: var(--muted); font-size: 0.88rem; margin: 6px 0 14px; }
+  .tags { display: flex; gap: 6px; margin-bottom: 14px; }
+  .tag { font-size: 0.74rem; background: var(--accent-soft); color: var(--accent);
+         border-radius: 6px; padding: 2px 9px; }
+  .btns { display: flex; gap: 10px; }
+  .btn { flex: 1; text-align: center; padding: 10px; border-radius: 10px; font-size: 0.9rem;
+         text-decoration: none; border: 1px solid var(--border); color: var(--accent);
+         background: var(--card); transition: all .15s; }
+  .btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .btn:hover { filter: brightness(1.05); border-color: var(--accent); }
+  footer { text-align: center; padding: 36px 20px 48px; color: var(--muted); font-size: 0.88rem; }
+  footer a { color: var(--accent); text-decoration: none; }
+  .faq { max-width: 720px; margin: 40px auto 0; background: var(--card);
+         border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 32px; }
+  .faq h2 { font-size: 1.15rem; margin-bottom: 14px; }
+  .faq details { border-top: 1px solid var(--border); padding: 12px 0; font-size: 0.9rem; }
+  .faq summary { cursor: pointer; font-weight: 600; }
+  .faq details p { color: var(--muted); margin-top: 8px; }
+  @media (max-width: 600px) { header.hero h1 { font-size: 1.8rem; } }
+</style>
+</head>
+<body>
+<header class="hero">
+  <h1>📄 Awesome Resume 简历模板</h1>
+  <p class="sub">免费精美的中文简历模板 · 无需注册无需下载软件 · 浏览器导出 PDF</p>
+  <div class="steps">
+    <div class="step"><b>1</b>选择模板在线预览</div>
+    <div class="step"><b>2</b>下载 HTML 改内容</div>
+    <div class="step"><b>3</b>Ctrl+P 导出 PDF</div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="grid">
+    <div class="card">
+      <div class="preview-wrap"><iframe src="templates/minimal.html" title="极简风预览" loading="lazy"></iframe></div>
+      <div class="info">
+        <h3>🖋️ 极简风 Minimal</h3>
+        <p>黑白衬线字体，庄重专业，适合传统行业、金融、咨询、国企求职</p>
+        <div class="tags"><span class="tag">通用</span><span class="tag">单栏</span><span class="tag">打印友好</span></div>
+        <div class="btns">
+          <a class="btn primary" href="templates/minimal.html" target="_blank" rel="noopener">在线预览</a>
+          <a class="btn" href="templates/minimal.html" download>下载模板</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="preview-wrap"><iframe src="templates/developer.html" title="程序员风预览" loading="lazy"></iframe></div>
+      <div class="info">
+        <h3>💻 程序员风 Developer</h3>
+        <p>深色侧边栏 + 技能进度条，突出技术栈和项目数据，互联网求职首选</p>
+        <div class="tags"><span class="tag">技术岗</span><span class="tag">双栏</span><span class="tag">技能可视化</span></div>
+        <div class="btns">
+          <a class="btn primary" href="templates/developer.html" target="_blank" rel="noopener">在线预览</a>
+          <a class="btn" href="templates/developer.html" download>下载模板</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="preview-wrap"><iframe src="templates/designer.html" title="设计师风预览" loading="lazy"></iframe></div>
+      <div class="info">
+        <h3>🎨 设计师风 Designer</h3>
+        <p>撞色横幅 + 作品色卡墙，视觉冲击力强，适合设计、市场、创意岗位</p>
+        <div class="tags"><span class="tag">创意岗</span><span class="tag">作品集</span><span class="tag">彩色</span></div>
+        <div class="btns">
+          <a class="btn primary" href="templates/designer.html" target="_blank" rel="noopener">在线预览</a>
+          <a class="btn" href="templates/designer.html" download>下载模板</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq">
+    <h2>❓ 常见问题</h2>
+    <details>
+      <summary>怎么把模板改成我自己的内容？</summary>
+      <p>下载 HTML 文件后，用任意文本编辑器（记事本、VS Code 都可以）打开，把里面的示例文字替换成你的信息，保存后用浏览器打开即可看到效果。</p>
+    </details>
+    <details>
+      <summary>怎么导出 PDF？</summary>
+      <p>用浏览器打开模板，按 Ctrl+P（Mac 是 Cmd+P），目标打印机选「另存为 PDF」，边距选「无」或「最小」，勾选「背景图形」，保存即可。</p>
+    </details>
+    <details>
+      <summary>可以免费商用吗？</summary>
+      <p>可以。本项目采用 CC0 协议（公有领域），个人和商用都不需要署名。</p>
+    </details>
+  </div>
+</main>
+
+<footer>
+  <p>用 ❤️ 维护 · <a href="https://github.com/AnonymousLeeJJ/awesome-resume-zh" target="_blank" rel="noopener">GitHub 仓库</a> · 欢迎 Star ⭐ 与投稿</p>
+</footer>
+</body>
+</html>
