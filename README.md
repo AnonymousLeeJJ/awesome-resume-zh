@@ -47,6 +47,9 @@
 - 🎯 [Awesome AI Prompts](https://github.com/AnonymousLeeJJ/awesome-ai-prompts) — 48 条实战验证的中文 AI 提示词，即复制即用
 - 🔌 [Free APIs 中文精选](https://github.com/AnonymousLeeJJ/free-apis-zh) — 真正可用的免费 API 大全，标注是否需 Key
 - 🧭 [AI Tools 导航](https://github.com/AnonymousLeeJJ/ai-tools-nav) — 国内外好用的 AI 工具精选，标注免费情况
+- ⚡ [开发者速查表](https://github.com/AnonymousLeeJJ/cheatsheets-zh) — Git/Docker/Linux/Vim/正则/HTTP/SQL 高频命令随查随用
+- ✨ [Pure CSS Effects](https://github.com/AnonymousLeeJJ/pure-css-effects) — 纯 CSS 特效库，实时预览一键复制
+- 📘 [Awesome README 中文模板](https://github.com/AnonymousLeeJJ/awesome-readme-zh) — 让人 30 秒决定点 Star 的 README 模板与指南
 
 ## 📄 许可
 
