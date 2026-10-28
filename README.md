@@ -52,6 +52,7 @@
 - 📘 [Awesome README 中文模板](https://github.com/AnonymousLeeJJ/awesome-readme-zh) — 让人 30 秒决定点 Star 的 README 模板与指南
 - 📚 [书灵.skill](https://github.com/AnonymousLeeJJ/shuling-skill) — 把书、课程或资料蒸馏成可调用的 AI 顾问
 - 🧩 [Agent Skills 中文导航](https://github.com/AnonymousLeeJJ/awesome-agent-skills-zh) — 精选真实可用的 Agent Skills、合集与规范资源
+- 🩺 [Repo Doctor](https://github.com/AnonymousLeeJJ/repo-doctor) — GitHub 仓库体检工具，生成 100 分制开源项目健康报告
 
 ## 📄 许可
 
