@@ -55,6 +55,36 @@
 </style>
 </head>
 <body>
+<style>
+  .gh-banner { display: flex; align-items: center; justify-content: center; gap: 10px;
+    flex-wrap: wrap; background: #1f2328; color: #fff; font-size: 0.86rem;
+    padding: 9px 46px 9px 16px; position: relative; line-height: 1.5;
+    text-align: center; font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; }
+  .gh-banner a { color: #fff; font-weight: 500; text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.45); padding-bottom: 1px; white-space: nowrap; }
+  .gh-banner a:hover { border-bottom-color: #fff; }
+  .gh-banner .gh-close { position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+    background: none; border: 0; color: rgba(255,255,255,0.7); font-size: 1.2rem;
+    cursor: pointer; line-height: 1; padding: 4px 9px; border-radius: 6px; }
+  .gh-banner .gh-close:hover { color: #fff; background: rgba(255,255,255,0.14); }
+  html.gh-banner-off .gh-banner { display: none; }
+  @media (max-width: 600px) { .gh-banner { font-size: 0.78rem; padding: 8px 40px 8px 12px; } }
+</style>
+<script>
+(function () {
+  try {
+    if (localStorage.getItem('gh-banner-off:awesome-resume-zh') === '1') {
+      document.documentElement.className += ' gh-banner-off';
+    }
+  } catch (e) {}
+})();
+</script>
+<div class="gh-banner">
+  <span>如果这个页面帮到你，去 GitHub 点个 Star 支持一下</span>
+  <a href="https://github.com/AnonymousLeeJJ/awesome-resume-zh" target="_blank" rel="noopener">前往仓库</a>
+  <button class="gh-close" type="button" aria-label="关闭" onclick="document.documentElement.className+=' gh-banner-off';try{localStorage.setItem('gh-banner-off:awesome-resume-zh','1')}catch(e){}">&times;</button>
+</div>
+
 <header class="hero">
   <h1>📄 Awesome Resume 简历模板</h1>
   <p class="sub">免费精美的中文简历模板 · 无需注册无需下载软件 · 浏览器导出 PDF</p>
