@@ -50,6 +50,7 @@
 - ⚡ [开发者速查表](https://github.com/AnonymousLeeJJ/cheatsheets-zh) — Git/Docker/Linux/Vim/正则/HTTP/SQL 高频命令随查随用
 - ✨ [Pure CSS Effects](https://github.com/AnonymousLeeJJ/pure-css-effects) — 纯 CSS 特效库，实时预览一键复制
 - 📘 [Awesome README 中文模板](https://github.com/AnonymousLeeJJ/awesome-readme-zh) — 让人 30 秒决定点 Star 的 README 模板与指南
+- 📚 [书灵.skill](https://github.com/AnonymousLeeJJ/shuling-skill) — 把书、课程或资料蒸馏成可调用的 AI 顾问
 
 ## 📄 许可
 
